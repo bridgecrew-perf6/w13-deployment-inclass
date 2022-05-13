@@ -30,7 +30,7 @@ jobs:
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:        
-        workload_identity_provider: 'principalSet://iam.googleapis.com/projects/250607475026/locations/global/workloadIdentityPools/github-action/*'
+        workload_identity_provider: 'projects/250607475026/locations/global/workloadIdentityPools/github-action/providers/github-oidc '
         service_account: 'github-action-234@w13-gke-doc.iam.gserviceaccount.com'
     - uses: google-github-actions/setup-gcloud@v0
       with:
